@@ -36,7 +36,6 @@ function App() {
   };
 
   const calculateRange = (level) => {
-    let start = 0;
     let cumulativePoints = 0;
     for (let i = 0; i < level; i++) {
       cumulativePoints += levelThresholds[i];
