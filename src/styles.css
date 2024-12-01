@@ -83,6 +83,10 @@ body {
     background: #aaa;
     cursor: not-allowed;
   }
+button{
+    margin: 5px;
+}
+    
   
   @media (max-width: 600px) {
     .add-task input {
