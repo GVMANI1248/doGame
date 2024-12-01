@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .task-manager {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  .add-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add-task input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  
+  .add-task button {
+    padding: 10px 20px;
+  }
+  
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+  }
+  
+  .task-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .complete-button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .complete-button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    .add-task input {
+      padding: 8px;
+    }
+    .task {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  /* Add Completed Tasks Styling */
+.completed-tasks {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .completed-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .completed-task button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+ /* Updated header for range display */
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.5em;
+    border-bottom: 3px solid #0056b3;
+  }
+  
+  header {
+    background-color: #f4f4f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Subtle border for structure */
+    border-radius: 8px; /* Rounded edges for modern look */
+    padding: 20px; /* Space inside the header */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below header */
+  }
+  
+  header .level {
+    font-size: 2rem; /* Emphasize the level heading */
+    font-weight: bold; /* Strong visual impact */
+    color: #333; /* Dark color for readability */
+    margin: 0; /* Remove default margin */
+  }
+  
+  header .range {
+    font-size: 1.2rem; /* Slightly smaller than level heading */
+    color: #555; /* Softer contrast for less emphasis */
+    margin: 10px 0; /* Space between elements */
+  }
+  
+  header .totalpoints {
+    font-size: 1rem; /* Standard size for paragraph */
+    color: #888; /* Subdued color to indicate secondary importance */
+    margin: 0; /* Remove default margin */
+    font-style: italic; /* Distinguish it as a note */
+  }
+  
+  
+  
